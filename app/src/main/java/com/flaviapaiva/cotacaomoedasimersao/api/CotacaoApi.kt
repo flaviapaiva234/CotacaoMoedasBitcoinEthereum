@@ -10,6 +10,8 @@ interface CotacaoApi {
     suspend fun recuperarCotacaoBitcoin() : Response<Cotacao>     // fun Utilizar tarefas assiconas usando corroutines
     // Converte o arquivo Json Retornavel para Cotação
 
+
+    // https://www.mercadobitcoin.net/api/  +  ETH/ticker/
     @GET("ETH/ticker/")
     suspend fun recuperarCotacaoEthereum() : Response<Cotacao>
 
